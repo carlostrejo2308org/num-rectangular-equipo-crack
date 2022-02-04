@@ -21,15 +21,15 @@
 
     Generador_Mixto-1: a = 8, c = 16, m = 100, x_0 = 15
     Lista generada: [36, 4, 48, 0, 16, 44, 68, 60, 96, 84, 88, 20, 76, 24, 8, 80, 56, 64, 28, 40, 36, 4, 48, 0, 16, 44, 68, 60, 96, 84, 88, 20, 76, 24, 8, 80, 56, 64, 28, 40, 36, 4, 48, 0, 16, 44, 68, 60, 96, 84, 88, 20, 76, 24, 8, 80, 56, 64, 28, 40, 36, 4, 48, 0, 16, 44, 68, 60, 96, 84, 88, 20, 76, 24, 8, 80, 56, 64, 28, 40, 36, 4, 48, 0, 16, 44, 68, 60, 96, 84, 88, 20, 76, 24, 8, 80, 56, 64, 28, 40]
-    Periocidad: 21
+    Periocidad: 21, p != limite (Período incompleto)
 
     Generador_Mixto-2: a = 50, c = 17, m = 64, x_0 = 13
     Lista generada: [27, 23, 15, 63, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
-    Periocidad: 6
+    Periocidad: 6, p != limite (Período incompleto)
 
     Generador_Mixto-3: a = 9, c = 13, m = 32, x_0 = 8
     Lista generada: [21, 10, 7, 12, 25, 14, 11, 16, 29, 18, 15, 20, 1, 22, 19, 24, 5, 26, 23, 28, 9, 30, 27, 0, 13, 2, 31, 4, 17, 6, 3, 8]
-    Periocidad: 32
+    Periocidad: 32, p = limite (Período completo)
 
     3. Determine el periodo de los siguientes generadores multiplicativos
         * a = 203, m = 10^5, x_0 = 17
@@ -37,13 +37,25 @@
         * a = 5, m = 64, x_0 = 7
 
     Generador_Multiplicativo-1: a = 203, m = 10^5, x_0 = 17
-    Lista generada: [1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4]
-    Periocidad: 5
+    Lista generada: [1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8, 4, 2, 1, 8]
+    Periocidad: 5, p != limite (Período incompleto)
 
     Generador_Multiplicativo-2: a = 221, m = 10^3, x_0 = 3
-    Lista generada: [6, 3, 6, 3, 6, 3, 6, 3, 6]
-    Periocidad: 3
+    Lista generada: [6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3]
+    Periocidad: 3, p != limite (Período incompleto)
 
     Generador_Multiplicativo-3: a = 5, m = 64, x_0 = 7
-    Lista generada: [35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7]
-    Periocidad: 17
+    Lista generada: [35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47, 43, 23, 51, 63, 59, 39, 3, 15, 11, 55, 19, 31, 27, 7, 35, 47]
+    Periocidad: 17, p != limite (Período incompleto)
+    
+    4.Obtenga los parametros (a, c, m y Xo) de un Generador Mixto que asegure un periodo completo
+    5.Obtenga los parametros (a, m y Xo) de un Generador Multiplicativo que asegure un periodo completo
+    
+    Generador_Mixto-1: a = 9, c = 12, m = 23, x_0 = 20
+    Lista generada: [8, 15, 9, 1, 21, 17, 4, 2, 7, 6, 20, 8]
+    Periocidad: 12, p = limite (Período completo)
+
+    Generador_Multiplicativo-1: a = 45, m = 103, x_0 = 17
+    Lista generada: [44, 23, 5, 19, 31, 56, 48, 100, 71, 2, 90, 33]
+    Periocidad: 12, p = limite (Período completo)
+    
